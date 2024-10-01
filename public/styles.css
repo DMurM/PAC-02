@@ -47,25 +47,6 @@ body {
     background-color: #575757;
 }
 
-.navbar-bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the icons */
-    margin-top: auto; /* Push to the bottom */
-}
-
-.navbar-bottom a {
-    padding: 10px; /* Add some padding for easier click */
-    color: white; /* Icon color */
-    font-size: 18px; /* Icon size */
-    transition: background-color 0.3s ease; /* Transition for hover */
-}
-
-.navbar-bottom a:hover {
-    background-color: #575757; /* Background color on hover */
-    border-radius: 15%; /* Rounded corners on hover */
-}
-
 /* Sidebar styling */
 .sidebar {
     width: 25%;
@@ -73,6 +54,7 @@ body {
     border-right: 1px solid #ccc;
     display: flex;
     flex-direction: column;
+    padding: 0; /* Remove padding to avoid extra space */
 }
 
 .profile-section {
@@ -94,7 +76,6 @@ body {
     display: flex; 
     justify-content: space-between;
     gap: 10px; 
-    border-radius: 10%;
 }
 
 .buttons-search button {
@@ -166,7 +147,7 @@ body {
 
 /* Chat section styling */
 .chat-section {
-    width: 62%;
+    width: 71%; 
     display: flex;
     flex-direction: column;
     height: 100%; 
@@ -176,7 +157,6 @@ body {
     flex-grow: 1;
     overflow-y: auto;
     padding: 10px; 
-    margin-left: 1%;
 }
 
 .message-input {
